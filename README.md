@@ -23,3 +23,10 @@ Enemies:
 	Octopus: unmoving or monodirectional movement, projectile attack possible, vulnerable on head
 
 	
+## Technology stack /  tools / stuff :
+* Unity
+* C#
+* Adobe PhotoShop
+* Adobe Illustrator
+* Discord
+* Git/Github
