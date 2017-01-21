@@ -28,7 +28,7 @@ namespace SeaSideScroll.Installers
 
             if(_startingMovementController != null)
             {
-                Observable.EveryUpdate()
+                Observable.EveryFixedUpdate()
                     .Subscribe(_ => _startingMovementController.Move(inputRouter.MovementInput.Value))
                     .AddTo(_startingMovementController);
             }

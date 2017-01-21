@@ -34,12 +34,12 @@ namespace SeaSideScroll.Entities.Movement
 
             var walkMovment = Vector2.right * input.x;
 
-            var position = _transform.position;
+            var position = _rigidbody.position;
             var position2D = new Vector2(position.x, position.y);
 
             position2D += (walkMovment * _movementSpeed) * Time.deltaTime;
 
-            _transform.position = position2D;
+            _rigidbody.position = (position2D);
 
             _grounded = Physics2D.Raycast(_transform.position, Vector2.down, _groundedCheckDist, _groundLayerMask);
 
