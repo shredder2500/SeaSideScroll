@@ -27,22 +27,25 @@ public abstract class Entity : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (_hitLayerMask == (_hitLayerMask | (1 << collision.gameObject.layer)))
-        {
-            if (Vector2.Dot(-collision.relativeVelocity.normalized, Vector2.down) > (1 - _hitFromTopAngleTolerance))
-            {
-                OnHitFromTop(collision);
-            }
-            else
-            {
-                OnHit(collision);
-            }
-        }
+		if (_hitLayerMask == (_hitLayerMask | (1 << collision.gameObject.layer)))
+		{
+			if (Vector2.Dot (-collision.relativeVelocity.normalized, Vector2.down) > (1 - _hitFromTopAngleTolerance)) 
+			{
+				OnHitFromTop (collision);
+			} else 
+			{
+				OnHit (collision);
+			}
+		}
+		if (collision.gameObject.layer == 0)
+			OnEntityCollide (collision);
     }
 
     protected abstract void OnHit(Collision2D collision);
 
     protected abstract void OnHitFromTop(Collision2D collision);
+
+	protected abstract void OnEntityCollide (Collision2D collision);
 
     protected virtual void Update()
     {

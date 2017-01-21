@@ -44,9 +44,11 @@ namespace SeaSideScroll.Entities.Movement
 			BoxCollider2D coll = this.GetComponent<BoxCollider2D>();
 			_grounded = Physics2D.BoxCast (_transform.position, new Vector2 (coll.bounds.size.x, coll.bounds.size.x), 0, Vector2.down, _groundedCheckDist,_groundLayerMask); 
 
+			Debug.Log (_grounded);
             if (input.y > 0 && _grounded)
-            {
-                _rigidbody.velocity += Vector2.up * _jumpForce;
+			{
+				_rigidbody.velocity = Vector2.up * _jumpForce;
+				_grounded = false;
             }
         }
 
