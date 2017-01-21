@@ -46,8 +46,9 @@ namespace SeaSideScroll.Entities.Movement
 
 			Debug.Log (_grounded);
             if (input.y > 0 && _grounded)
-            {
-                _rigidbody.velocity += Vector2.up * _jumpForce;
+			{
+				_rigidbody.velocity = Vector2.up * _jumpForce;
+				_grounded = false;
             }
         }
 
