@@ -47,5 +47,13 @@ namespace SeaSideScroll.Entities
                 GetComponent<Rigidbody2D>().velocity = (leftForce ? Vector2.left : Vector2.right) * _kickForce;
             }
         }
+
+        protected override void Update()
+        {
+            if (!_inShell)
+            {
+                base.Update();
+            }
+        }
     }
 }
