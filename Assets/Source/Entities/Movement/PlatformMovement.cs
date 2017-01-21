@@ -1,16 +1,18 @@
-﻿using System.Collections;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlatformMovement : MonoBehaviour {
+namespace SeaSideScroll.Entities.Movement
+{
+    public class PlatformMovement : MonoBehaviour, IMovementController
+    {
+        [SerializeField]
+        private float _movementSpeed;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+        public void Move(Vector2 input)
+        {
+            
+        }
+    }
 }
