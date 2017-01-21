@@ -13,13 +13,18 @@ namespace SeaSideScroll.Installers
         private float _physicalInputDeadZone;
         [SerializeField]
         private PlatformMovement _startingMovementController;
+        [SerializeField]
+        private bool _registerGlazeInput;
 
         public void Install(DiContainer container)
         {
             var inputRouter = new InputRouter(_physicalInputDeadZone);
-            var keyboardInputController = new KeyboardInputController();
 
-            inputRouter.RegisterMovementInput(keyboardInputController);
+            inputRouter.RegisterMovementInput(new KeyboardInputController());
+            if (_registerGlazeInput)
+            {
+                inputRouter.RegisterMovementInput(new GlazeInputController());
+            }
 
             if(_startingMovementController != null)
             {

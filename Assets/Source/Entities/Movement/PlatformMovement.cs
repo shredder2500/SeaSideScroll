@@ -31,7 +31,7 @@ namespace SeaSideScroll.Entities.Movement
 
             position2D += (walkMovment * _movementSpeed) * Time.deltaTime;
 
-            _transform.position = position2D;
+            _transform.position = input;
         }
     }
 }
