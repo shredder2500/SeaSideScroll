@@ -20,8 +20,7 @@ Enemy Types:
 	
 	Man O' War: A jellyfish that floats vertically up and down. Can be defeated by being jumped on, but will shock the player for damage if contact is made with its noodle arms (the lower part of the enemy).
 	
-	Cutesy Octopus: An Octopus (think Octillary from Pokemon) that can shoot damaging projectile ink at the player.
-Can be jumped on to bounce higher than usual.
+	Cutesy Octopus: An Octopus (think Octillary from Pokemon) that can shoot damaging projectile ink at the player. Can be jumped on to bounce higher than usual.
 
 	
 ## Technology stack /  tools / stuff :
