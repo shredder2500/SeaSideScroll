@@ -36,17 +36,29 @@ namespace SeaSideScroll.Entities
 
         protected override void OnHit(Collision2D collision)
         {
+			Debug.Log (collision.gameObject.name);
             if (!_inShell)
             {
                 base.OnHit(collision);
             }
-            else
+			else if (collision.gameObject.GetComponent<Entity>())
+			{
+				Destroy (collision.gameObject);
+			}
+			else 
             {
                 Debug.Log("Kicked");
                 var leftForce = collision.transform.position.x > transform.position.x;
                 GetComponent<Rigidbody2D>().velocity = (leftForce ? Vector2.left : Vector2.right) * _kickForce;
             }
         }
+
+		protected override void OnEntityCollide (Collision2D collision)
+		{
+			Debug.Log ("Creature Collide");
+			if (_inShell)
+				Destroy (collision.gameObject);
+		}
 
         protected override void Update()
         {
