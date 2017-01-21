@@ -19,7 +19,7 @@ namespace SeaSideScroll.Entities
                 Debug.Log("Shelled");
                 _inShell = true;
                 Invoke("Unshell", _timeInShell);
-                GetComponent<SpriteRenderer>().color = Color.blue;
+                GetComponent<Animator>().SetTrigger("Shell");
             }
             else
             {
@@ -31,7 +31,7 @@ namespace SeaSideScroll.Entities
         {
             Debug.Log("Unshelled");
             _inShell = false;
-            GetComponent<SpriteRenderer>().color = Color.white;
+            GetComponent<Animator>().SetTrigger("Shell");
         }
 
         protected override void OnHit(Collision2D collision)
