@@ -10,9 +10,17 @@ namespace SeaSideScroll.Entities.Movement
     {
         [SerializeField]
         private float _movementSpeed = 5;
+        [SerializeField]
+        private float _jumpForce = 2;
 
         private Rigidbody2D _rigidbody;
         private Transform _transform;
+        [SerializeField]
+        private float _groundedCheckDist = .25f;
+        [SerializeField]
+        private LayerMask _groundLayerMask;
+        [SerializeField]
+        private bool _grounded;
 
         private void Start()
         {
@@ -31,7 +39,19 @@ namespace SeaSideScroll.Entities.Movement
 
             position2D += (walkMovment * _movementSpeed) * Time.deltaTime;
 
-            _transform.position = input;
+            _transform.position = position2D;
+
+            _grounded = Physics2D.Raycast(_transform.position, Vector2.down, _groundedCheckDist, _groundLayerMask);
+
+            if (input.y > 0 && _grounded)
+            {
+                _rigidbody.velocity += Vector2.up * _jumpForce;
+            }
+        }
+
+        private void OnDrawGizmosSelected()
+        {
+            Gizmos.DrawRay(transform.position, Vector2.down * _groundedCheckDist);
         }
     }
 }

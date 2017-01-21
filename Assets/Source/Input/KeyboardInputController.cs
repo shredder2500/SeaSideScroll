@@ -1,3 +1,4 @@
+using System.Linq;
 using UniRx;
 using UnityEngine;
 
@@ -8,7 +9,7 @@ namespace SeaSideScroll.Input
         [SerializeField]
         private string _horizontalInputKey = "Horizontal";
         [SerializeField]
-        private string _verticalInputKey = "Vertical";
+        private KeyCode[] _jumpKeys = new[] { KeyCode.UpArrow, KeyCode.W };
 
         public Vector2 MovementInput { get; private set; }
 
@@ -21,9 +22,9 @@ namespace SeaSideScroll.Input
         private void ProcessInput()
         {
             var x = UnityEngine.Input.GetAxis(_horizontalInputKey);
-            var y = UnityEngine.Input.GetAxis(_verticalInputKey);
+            var jump = _jumpKeys.Any(key => UnityEngine.Input.GetKeyDown(key));
 
-            MovementInput = new Vector2(x, y);
+            MovementInput = new Vector2(x, jump ? 1 : 0);
         }
     }
 }
