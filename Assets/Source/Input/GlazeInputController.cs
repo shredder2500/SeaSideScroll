@@ -22,6 +22,7 @@ namespace SeaSideScroll.Input
         {
             var gazePoint = EyeTracking.GetGazePoint();
             var gazePositionInWorld = ProjectToPlaneInWorld(gazePoint);
+            gazePositionInWorld.y -= .25f;
 
             var x = 0f;
             var y = 0f;
