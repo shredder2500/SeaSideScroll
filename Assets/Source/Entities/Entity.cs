@@ -57,6 +57,7 @@ public abstract class Entity : MonoBehaviour
     protected void Move()
     {
         _movementController.Move(_moveDir);
+        transform.localScale = new Vector3(-_moveDir.x, 1, 1);
     }
 
     private void OnDrawGizmosSelected()
