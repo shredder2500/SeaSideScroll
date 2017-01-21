@@ -6,21 +6,22 @@ You play as a human player who is surviving the constant seige of waves
 and enemy sea creatures. 
 
 Player Actions: 
-	Run, Jump, Idle
+
+=======
+	Run, Jump, Idle, Attack??
 	
 Platforming:
 	Piers, Bridges, Dunes, Waves?
-
-Enemies:
-	Three (Tentatively)
 	
-	[Crab, Jellyfish (Man'O'War), Octopus Artillary]	
+Enemy Types:
+	Generic Beach Crab: The most basic enemy that be defeated simply by being jumped (inspired by Goombas)
 	
-	Crab: basic monodirectional movement enemy, vulnerable on head, hurts side to side
+	Round-shelled Snails: Snails that the player can jump on to force the snail into their shell, so the shell can then be kicked (inspired by Koopa Troopas)
 	
-	Man'O'War: Floating enemy vulnerable on "head," hurts underneath (tentacles)
+	Man O' War: A jellyfish that floats vertically up and down. Can be defeated by being jumped on, but will shock the player for damage if contact is made with its noodle arms (the lower part of the enemy).
 	
-	Octopus: unmoving or monodirectional movement, projectile attack possible, vulnerable on head
+	Cutesy Octopus: An Octopus (think Octillary from Pokemon) that can shoot damaging projectile ink at the player.
+Can be jumped on to bounce higher than usual.
 
 	
 ## Technology stack /  tools / stuff :
