@@ -1,17 +1,25 @@
 fileFormatVersion: 2
-guid: 573501698e9df0b4e93a6d28b15cecbb
-timeCreated: 1484993760
+guid: f5e5eb220b8fac241ad9f8abd0ff6b56
+timeCreated: 1485034743
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: SnailUnitySheet_0
-    21300002: SnailUnitySheet_1
-    21300004: SnailUnitySheet_2
-    21300006: SnailUnitySheet_3
-    21300008: SnailUnitySheet_4
-    21300010: SnailUnitySheet_5
-    21300012: SnailUnitySheet_6
-    21300014: SnailUnitySheet_7
+    21300000: BeachDudeUnitySheet_0
+    21300002: BeachDudeUnitySheet_1
+    21300004: BeachDudeUnitySheet_2
+    21300006: BeachDudeUnitySheet_3
+    21300008: BeachDudeUnitySheet_4
+    21300010: BeachDudeUnitySheet_5
+    21300012: BeachDudeUnitySheet_6
+    21300014: BeachDudeUnitySheet_7
+    21300016: BeachDudeUnitySheet_8
+    21300018: BeachDudeUnitySheet_9
+    21300020: BeachDudeUnitySheet_10
+    21300022: BeachDudeUnitySheet_11
+    21300024: BeachDudeUnitySheet_12
+    21300026: BeachDudeUnitySheet_13
+    21300028: BeachDudeUnitySheet_14
+    21300030: BeachDudeUnitySheet_15
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -102,7 +110,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SnailUnitySheet_0
+      name: BeachDudeUnitySheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BeachDudeUnitySheet_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BeachDudeUnitySheet_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BeachDudeUnitySheet_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BeachDudeUnitySheet_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BeachDudeUnitySheet_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BeachDudeUnitySheet_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BeachDudeUnitySheet_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BeachDudeUnitySheet_8
       rect:
         serializedVersion: 2
         x: 0
@@ -115,7 +227,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SnailUnitySheet_1
+      name: BeachDudeUnitySheet_9
       rect:
         serializedVersion: 2
         x: 64
@@ -128,7 +240,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SnailUnitySheet_2
+      name: BeachDudeUnitySheet_10
       rect:
         serializedVersion: 2
         x: 128
@@ -141,7 +253,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SnailUnitySheet_3
+      name: BeachDudeUnitySheet_11
       rect:
         serializedVersion: 2
         x: 192
@@ -154,7 +266,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SnailUnitySheet_4
+      name: BeachDudeUnitySheet_12
       rect:
         serializedVersion: 2
         x: 256
@@ -167,7 +279,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SnailUnitySheet_5
+      name: BeachDudeUnitySheet_13
       rect:
         serializedVersion: 2
         x: 320
@@ -180,7 +292,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SnailUnitySheet_6
+      name: BeachDudeUnitySheet_14
       rect:
         serializedVersion: 2
         x: 384
@@ -193,7 +305,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SnailUnitySheet_7
+      name: BeachDudeUnitySheet_15
       rect:
         serializedVersion: 2
         x: 448

@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: b20b943fd35497e458382d0edd4ebc8a
-timeCreated: 1484993722
+guid: 573501698e9df0b4e93a6d28b15cecbb
+timeCreated: 1484993760
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: JellyfishUnitySheet_0
-    21300002: JellyfishUnitySheet_1
-    21300004: JellyfishUnitySheet_2
-    21300006: JellyfishUnitySheet_3
-    21300008: JellyfishUnitySheet_4
-    21300010: JellyfishUnitySheet_5
-    21300012: JellyfishUnitySheet_6
-    21300014: JellyfishUnitySheet_7
+    21300000: SnailUnitySheet_0
+    21300002: SnailUnitySheet_1
+    21300004: SnailUnitySheet_2
+    21300006: SnailUnitySheet_3
+    21300008: SnailUnitySheet_4
+    21300010: SnailUnitySheet_5
+    21300012: SnailUnitySheet_6
+    21300014: SnailUnitySheet_7
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -48,7 +48,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 64
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -102,7 +102,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JellyfishUnitySheet_0
+      name: SnailUnitySheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,7 +115,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: JellyfishUnitySheet_1
+      name: SnailUnitySheet_1
       rect:
         serializedVersion: 2
         x: 64
@@ -128,7 +128,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: JellyfishUnitySheet_2
+      name: SnailUnitySheet_2
       rect:
         serializedVersion: 2
         x: 128
@@ -141,7 +141,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: JellyfishUnitySheet_3
+      name: SnailUnitySheet_3
       rect:
         serializedVersion: 2
         x: 192
@@ -154,7 +154,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: JellyfishUnitySheet_4
+      name: SnailUnitySheet_4
       rect:
         serializedVersion: 2
         x: 256
@@ -167,7 +167,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: JellyfishUnitySheet_5
+      name: SnailUnitySheet_5
       rect:
         serializedVersion: 2
         x: 320
@@ -180,7 +180,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: JellyfishUnitySheet_6
+      name: SnailUnitySheet_6
       rect:
         serializedVersion: 2
         x: 384
@@ -193,7 +193,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: JellyfishUnitySheet_7
+      name: SnailUnitySheet_7
       rect:
         serializedVersion: 2
         x: 448

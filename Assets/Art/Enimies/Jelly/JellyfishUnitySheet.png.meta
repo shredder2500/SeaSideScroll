@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: 129cc964ce0baad498ccee1f4a545ed5
-timeCreated: 1484993707
+guid: b20b943fd35497e458382d0edd4ebc8a
+timeCreated: 1484993722
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: CrabUnitySheet_0
-    21300002: CrabUnitySheet_1
-    21300004: CrabUnitySheet_2
-    21300006: CrabUnitySheet_3
-    21300008: CrabUnitySheet_4
-    21300010: CrabUnitySheet_5
-    21300012: CrabUnitySheet_6
-    21300014: CrabUnitySheet_7
+    21300000: JellyfishUnitySheet_0
+    21300002: JellyfishUnitySheet_1
+    21300004: JellyfishUnitySheet_2
+    21300006: JellyfishUnitySheet_3
+    21300008: JellyfishUnitySheet_4
+    21300010: JellyfishUnitySheet_5
+    21300012: JellyfishUnitySheet_6
+    21300014: JellyfishUnitySheet_7
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -48,7 +48,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 64
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -102,7 +102,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CrabUnitySheet_0
+      name: JellyfishUnitySheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,7 +115,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: CrabUnitySheet_1
+      name: JellyfishUnitySheet_1
       rect:
         serializedVersion: 2
         x: 64
@@ -128,7 +128,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: CrabUnitySheet_2
+      name: JellyfishUnitySheet_2
       rect:
         serializedVersion: 2
         x: 128
@@ -141,7 +141,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: CrabUnitySheet_3
+      name: JellyfishUnitySheet_3
       rect:
         serializedVersion: 2
         x: 192
@@ -154,7 +154,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: CrabUnitySheet_4
+      name: JellyfishUnitySheet_4
       rect:
         serializedVersion: 2
         x: 256
@@ -167,7 +167,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: CrabUnitySheet_5
+      name: JellyfishUnitySheet_5
       rect:
         serializedVersion: 2
         x: 320
@@ -180,7 +180,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: CrabUnitySheet_6
+      name: JellyfishUnitySheet_6
       rect:
         serializedVersion: 2
         x: 384
@@ -193,7 +193,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: CrabUnitySheet_7
+      name: JellyfishUnitySheet_7
       rect:
         serializedVersion: 2
         x: 448

@@ -9,7 +9,7 @@ namespace SeaSideScroll.Input
     {
         public Vector2 MovementInput { get; private set; }
         private const float VISUALIZATION_DISTANCE = 10;
-        private const float DEADZONE = .25f;
+        private const float DEADZONE = .5f;
         private bool _canJump = true;
 
         public GlazeInputController()
