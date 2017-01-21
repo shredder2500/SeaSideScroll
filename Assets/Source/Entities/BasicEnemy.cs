@@ -6,8 +6,11 @@ namespace SeaSideScroll.Entities
     {
         protected override void OnHit(Collision2D collision)
         {
-            // TODO: use pooling system and maybe implement player object to handle lifes?
-            Destroy(collision.gameObject);
+            var player = collision.gameObject.GetComponent<Player>();
+            if (player)
+            {
+                player.Damage();
+            }
         }
 
         protected override void OnHitFromTop(Collision2D collision)

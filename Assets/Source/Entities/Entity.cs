@@ -9,15 +9,15 @@ using UnityEngine;
 public abstract class Entity : MonoBehaviour
 {
     [SerializeField]
-    private float _hitFromTopAngleTolerance = .1f;
-    [SerializeField]
-    private LayerMask _hitLayerMask;
-    [SerializeField]
-    private float _groundCheckDis = .3f;
-    [SerializeField]
-    private LayerMask _groundLayerMask;
-
-    private Vector2 _moveDir = Vector2.left;
+    private float _hitFromTopAngleTolerance = .1f;                                                              
+    [SerializeField]                                                                                            
+    private LayerMask _hitLayerMask;                                                                            
+    [SerializeField]                                                                                            
+    private float _groundCheckDis = .3f;                                                                        
+    [SerializeField]                                                                                            
+    private LayerMask _groundLayerMask;                                                                         
+                                                                                                                
+    private Vector2 _moveDir = Vector2.left;                                                                    
     private IMovementController _movementController;
 
     private void Start()
@@ -54,9 +54,9 @@ public abstract class Entity : MonoBehaviour
         }
     }
 
-    protected void Move()
+    protected void Move(float jump = 0)
     {
-        _movementController.Move(_moveDir);
+        _movementController.Move(new Vector2(_moveDir.x, jump));
         transform.localScale = new Vector3(-_moveDir.x, 1, 1);
     }
 

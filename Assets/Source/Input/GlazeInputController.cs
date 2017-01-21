@@ -10,6 +10,7 @@ namespace SeaSideScroll.Input
         public Vector2 MovementInput { get; private set; }
         private const float VISUALIZATION_DISTANCE = 10;
         private const float DEADZONE = .25f;
+        private bool _canJump = true;
 
         public GlazeInputController()
         {
@@ -25,13 +26,23 @@ namespace SeaSideScroll.Input
             var x = 0f;
             var y = 0f;
 
-            if(gazePositionInWorld.x < Camera.main.transform.position.x - DEADZONE)
+            var player = GameObject.FindGameObjectWithTag("Player");
+
+            if (gazePositionInWorld.x < player.transform.position.x - DEADZONE)
             {
                 x = -1;
             }
-            else if (gazePositionInWorld.x > Camera.main.transform.position.x + DEADZONE)
+            else if (gazePositionInWorld.x > player.transform.position.x + DEADZONE)
             {
                 x = 1;
+            }
+
+            if(gazePositionInWorld.y > player.transform.position.y + DEADZONE && _canJump)
+            {
+                y = 1;
+                _canJump = false;
+                Observable.Timer(TimeSpan.FromSeconds(.25f))
+                    .Subscribe(_ => _canJump = true);
             }
 
             MovementInput = new Vector2(x, y);
