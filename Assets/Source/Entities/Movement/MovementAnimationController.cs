@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using SeaSideScroll.Entities.Movement;
 using UnityEngine;
@@ -31,6 +31,7 @@ namespace SeaSideScroll.Entities.Movement
 
 		void SetAnimationParameters ()
 		{
+            if (_input == null) return;
 			Vector2 velocity = _input.MovementInput.Value;
 			Debug.Log (velocity);
 

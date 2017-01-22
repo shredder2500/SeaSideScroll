@@ -18,9 +18,9 @@ public abstract class Entity : MonoBehaviour
     private LayerMask _groundLayerMask;                                                                         
                                                                                                                 
     private Vector2 _moveDir = Vector2.left;                                                                    
-    private IMovementController _movementController;
+    protected IMovementController _movementController;
 
-    private void Start()
+    protected virtual void Start()
     {
         _movementController = GetComponent<IMovementController>();
     }
@@ -51,7 +51,22 @@ public abstract class Entity : MonoBehaviour
     {
         Move();
 
-        if(Physics2D.Raycast(transform.position, _moveDir, _groundCheckDis, _groundLayerMask))
+        CheckIfNeedsToTurn();
+    }
+    
+
+    protected bool CheckIfNextToGround()
+    {
+        if (Physics2D.Raycast(transform.position, _moveDir, _groundCheckDis, _groundLayerMask))
+        {
+            return true;
+        }
+        return false;
+    }
+
+    protected void CheckIfNeedsToTurn()
+    {
+        if (CheckIfNextToGround())  
         {
             _moveDir = -_moveDir;
         }

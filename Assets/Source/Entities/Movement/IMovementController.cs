@@ -13,5 +13,7 @@ namespace SeaSideScroll.Entities.Movement
         /// </summary>
         /// <param name="input">Direction to move entity. x and y values should be clamped to -1, 1</param>
         void Move(Vector2 input);
+
+        bool IsGrounded { get; }
     }
 }

@@ -22,6 +22,8 @@ namespace SeaSideScroll.Entities.Movement
         [SerializeField]
         private bool _grounded;
 
+        public bool IsGrounded { get { return _grounded; } }
+
         private void Start()
         {
             _rigidbody = GetComponent<Rigidbody2D>();
