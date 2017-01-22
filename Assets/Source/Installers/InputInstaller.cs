@@ -1,3 +1,4 @@
+using SeasideScroll.GUI;
 using SeaSideScroll.Entities.Movement;
 using SeaSideScroll.Input;
 using UniRx;
@@ -13,15 +14,13 @@ namespace SeaSideScroll.Installers
         private float _physicalInputDeadZone;
         [SerializeField]
         private PlatformMovement _startingMovementController;
-        [SerializeField]
-        private bool _registerGlazeInput;
 
         public void Install(DiContainer container)
         {
             var inputRouter = new InputRouter(_physicalInputDeadZone);
 
             inputRouter.RegisterMovementInput(new KeyboardInputController());
-            if (_registerGlazeInput)
+            if (PlayerPrefs.GetInt(StartMenu.USE_TOBII_KEY) == 1)
             {
                 inputRouter.RegisterMovementInput(new GlazeInputController());
             }
