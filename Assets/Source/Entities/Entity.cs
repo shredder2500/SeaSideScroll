@@ -37,7 +37,7 @@ public abstract class Entity : MonoBehaviour
 				OnHit (collision);
 			}
 		}
-		if (collision.gameObject.layer == 0)
+		if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
 			OnEntityCollide (collision);
     }
 
