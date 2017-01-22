@@ -39,7 +39,7 @@ namespace SeaSideScroll.Entities.Movement
 
             position2D += (walkMovment * _movementSpeed) * Time.deltaTime;
 
-            _rigidbody.position = (position2D);
+			_rigidbody.position = (position2D);
 
 			BoxCollider2D coll = this.GetComponent<BoxCollider2D>();
 			_grounded = Physics2D.BoxCast (_transform.position, new Vector2 (coll.bounds.size.x, coll.bounds.size.x), 0, Vector2.down, _groundedCheckDist,_groundLayerMask); 
